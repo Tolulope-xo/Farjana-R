@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets1/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins1";
+  src: url("../assets1/fonts/Poppins-Light.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  max-width: 1440px;
+}
+
+@import "./util";
+@import "./nav";
+@import "./hero";
+@import "./contain";
+@import "./container";
+@import "./container1";
+@import "./services1";
+@import "./boxes";
+@import "./client";
+@import "./rectangle";

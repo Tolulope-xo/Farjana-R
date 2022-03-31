@@ -1,0 +1,60 @@
+.hero {
+  h1 {
+    text-transform: uppercase;
+    margin: auto;
+    align-items: center;
+    width: 580px;
+
+    text-align: center;
+    display: flex;
+    background: linear-gradient(
+      90deg,
+      #1fd895 10.14%,
+      #12badf 49.71%,
+      #c5018e 84.62%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    // animation: shakeX;
+    // animation-duration: 2.5s; 
+
+
+    // overflow: visible; /* Ensures the content is not revealed until the animation */
+    // border-right: 0.1em solid white; /* The typwriter cursor */
+    // // white-space: nowrap; /* Keeps the content on a single line */
+    // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    // letter-spacing: 0.15em; /* Adjust as needed */
+    // animation: typing 5s steps(35, end), blink-caret .5s step-end infinite;
+    // /* The typing effect */
+    // @keyframes typing {
+    //   from {
+    //     width: 0;
+    //   }
+    //   to {
+    //     width: 30%;
+    //   }
+    // }
+
+  
+    // /* The typewriter cursor effect */
+    // @keyframes blink-caret {
+    //   from,
+    //   to {
+    //     border-color: transparent;
+    //   }
+    //   100% {
+    //     border-color: white;
+    //   }
+    // }
+    @media only screen and (max-width: $mobile) {
+      width: 280px;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    font: {
+      size: 50px;
+      weight: 700;
+      family: $fontFamily;
+    }
+  }
+}

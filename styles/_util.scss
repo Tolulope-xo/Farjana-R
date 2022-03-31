@@ -1,0 +1,13 @@
+$fontSize: 24px;
+$fontFamily:  'Poppins', sans-serif; ;
+$fontFamily1: Poppins1;
+$laptop: 1280px;
+$mobile: 420px;
+$ipad: 688px;
+$tablet: 1025px;
+
+
+@mixin  property {
+    weight: 600;
+    family: $fontFamily;
+  }

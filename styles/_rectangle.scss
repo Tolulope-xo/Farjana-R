@@ -1,0 +1,56 @@
+.rectangle {
+  position: relative;
+  max-width: fit-content;
+  margin: auto;
+  top: 70px;
+  left: 20px;
+  font-family: $fontFamily1;
+  height: 300px;
+  gap: 150px;
+  display: flex;
+  @media only screen and (max-width: $mobile) {
+    display: block;
+    left: 0;
+  }
+  @media (min-width: $ipad) and (max-width: $tablet) {
+    display: block;
+  }
+  .rectangle1 {
+    // float: left;
+    width: 200px;
+    img {
+      width: 280px;
+      margin-top: 10px;
+    }
+    p {
+      margin-top: 35px;
+      width: 280px;
+      font-size: 18px;
+    }
+  }
+  .rectangle2 {
+    // float: right;
+    text-align: left;
+    align-items: left;
+    font-size: 18px;
+    @media only screen and (max-width: $mobile) {
+      font-size: 14px;
+    }
+    th {
+      text-transform: uppercase;
+    }
+    td {
+      padding-right: 80px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      word-break: break-all;
+      @media only screen and (max-width: $mobile) {
+        font-size: 14px;
+        padding-right: 40px;
+      }
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.price {
+  margin: 0 110px;
+  height: 116px;
+
+  @media only screen and (max-width: $mobile) {
+    margin: 0 0px;
+    padding: 0;
+  }
+  @media (min-width: $ipad) and (max-width: $tablet) {
+  }
+
+  img {
+    max-width: 180px;
+    @media only screen and (max-width: $mobile) {
+      margin-right: 60px;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      padding-right: 20rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .home {
+      display: flex;
+      justify-content: space-around;
+      :hover {
+        color: #e74b4b;
+        transition: 0.5s ease-in;
+        letter-spacing: 3px;
+      }
+      @media only screen and (max-width: $mobile) {
+        display: none;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        border-color: #e74b4b;
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        :active {
+          left: 0;
+        }
+      }
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        display: none;
+      }
+      .nav-link {
+        margin: 0 15px;
+        @media only screen and (max-width: $mobile) {
+          margin: 16px 0;
+          
+        }
+      }
+      font: {
+        size: 15px;
+        weight: 600;
+        family: $fontFamily;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      padding-left: -10rem;
+    }
+  }
+  button {
+    border: 1px solid #e74b4b;
+    border-radius: 20px;
+    background-color: #e74b4b;
+    color: white;
+    width: 140px;
+    height: 35px;
+    @media only screen and (max-width: $mobile) {
+      display: none;
+      width: 100px;
+      margin-right: 0px;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      margin-left: -10rem;
+    }
+  }
+  .burger {
+    display: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: $mobile) {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;    }
+
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      display: block;
+    }
+  }
+}

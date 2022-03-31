@@ -1,0 +1,49 @@
+.container1 {
+  margin-top: 90px;
+  font-family: $fontFamily;
+
+  .services {
+    text-align: center;
+    animation: backInRight;
+    animation-duration: 2.5s;
+
+   
+    h3 {
+      font-weight: 700;
+      font-size: 22px;
+      background: linear-gradient(
+        90deg,
+        #1fd895 10.14%,
+        #12badf 49.71%,
+        #c5018e 54.62%
+      );
+
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    h2 {
+      font-size: 60px;
+      justify-content: center;
+      text-align: center;
+      width: 680px;
+      margin: auto;
+      line-height: 0.9;
+      @media only screen and (max-width: $mobile) {
+        width: 370px;
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-family: $fontFamily1;
+      justify-content: center;
+      text-align: center;
+      width: 647px;
+      margin: 20px auto;
+      @media only screen and (max-width: $mobile) {
+        width: 350px;
+      }
+    }
+  }
+}

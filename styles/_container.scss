@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  background-color: #222222;
+ height: 700px;
+  align-items: center;
+  margin: auto;
+  margin-top: 120px;
+  justify-content: center;
+  font-family: $fontFamily;
+
+  @media only screen and (max-width: $mobile) {
+    height: 500px;
+    margin: auto;
+  }
+  .Image {
+    margin-right: 130px;
+
+    @media only screen and (max-width: $mobile) {
+      display: none;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      display: none;
+    }
+
+    .one {
+      position: relative;
+      top: -20px;
+      left: -30px;
+      border-radius: 12px;
+      @media only screen and (max-width: $laptop) {
+        top: -20px;
+      left: -50px;
+      }
+    }
+    .two {
+      position: absolute;
+      left: 180px;
+      top: 70rem;
+      border-radius: 12px;
+    }
+
+    @media only screen and (max-width: $laptop) {
+      .one {
+        top: 40px;
+        left: 50px;
+      }
+    }
+  }
+}
+
+  .contain1 {
+    @media only screen and (max-width: $mobile) {
+      margin-left: 60px;
+    }
+    h1 {
+      font-size: 22px;
+      background: Linear-gradient(
+        90deg,
+        #1fd895 1.6%,
+        #12badf 4.77%,
+        #c5018e 19.777%
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 550px;
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1.2;
+      @media only screen and (max-width: $mobile) {
+        font-size: 40px;
+        width: 400px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      width: 500px;
+      font-family: $fontFamily1;
+      @media only screen and (max-width: $mobile) {
+        font-size: 15px;
+        width: 350px;
+      }
+    }
+
+    button {
+      border: 2px solid white;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      background-color: #222222;
+      border-radius: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: white;
+      font-family: $fontFamily;
+    }
+  }
+

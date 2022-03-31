@@ -1,0 +1,43 @@
+.services-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  animation: none;
+  @media only screen and (max-width: $mobile) {
+    display: block;
+  }
+
+  .main-1,
+  .main-2,
+  .main-3 {
+    width: 373px;
+    height: 304px;
+    background-color: #161515;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    align-items: center;
+    @media only screen and (max-width: $mobile) {
+      margin: 10px auto;
+      width: 320px;
+      height: 260px;
+      align-items: center;
+    }
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        height: 370px;
+        
+      }
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      @include property;
+      font-size: 18px;
+      font-weight: 100;
+    }
+  }
+

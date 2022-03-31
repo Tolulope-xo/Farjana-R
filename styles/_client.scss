@@ -1,0 +1,71 @@
+.client {
+  background-color: #111111;
+  height: 600px;
+  margin-top: 0;
+  @media only screen and (max-width: $mobile) {
+    height: fit-content;
+  }
+  @media (min-width: $ipad) and (max-width: $tablet) {
+    height: fit-content;
+  }
+  .clients {
+    align-items: center;
+    text-align: center;
+    font-family: $fontFamily;
+    max-width: 700px;
+    margin: auto;
+    h3 {
+      padding-top: 90px;
+      background: linear-gradient(
+        90deg,
+        #1fd895 10.14%,
+        #12badf 19.71%,
+        #c5018e 54.62%
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 60px;
+  }
+}
+.img {
+  position: relative;
+  width: fit-content;
+  align-items: center;
+  margin: auto;
+  @media only screen and (max-width: $mobile) {
+    margin: 0;
+  }
+
+  .frame1 {
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+    @media only screen and (max-width: $mobile) {
+      display: inline;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      display: inline;
+      margin-left: 0;
+    }
+  }
+  .frame2 {
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    margin-left: 150px;
+    @media only screen and (max-width: $mobile) {
+      display: inline;
+      margin: 0;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      display: block;
+      margin: 0;
+    }
+  }
+}

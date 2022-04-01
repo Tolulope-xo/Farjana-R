@@ -17,9 +17,11 @@ body {
           box-sizing: border-box;
   background-color: black;
   color: white;
+  width: 100%;
 }
 
 nav {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,6 +139,10 @@ nav .burger {
   }
 }
 
+.hero {
+  overflow-x: hidden;
+}
+
 .hero h1 {
   text-transform: uppercase;
   margin: auto;
@@ -167,6 +173,7 @@ nav .burger {
 }
 
 .contain {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +229,7 @@ nav .burger {
 }
 
 .container {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,6 +355,7 @@ nav .burger {
 }
 
 .container1 {
+  overflow-x: hidden;
   margin-top: 90px;
   font-family: "Poppins", sans-serif;
 }
@@ -404,6 +413,7 @@ nav .burger {
 }
 
 .services-1 {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,6 +489,7 @@ nav .burger {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 .boxes .box1 {
@@ -650,6 +661,7 @@ nav .burger {
 }
 
 .client {
+  overflow-x: hidden;
   background-color: #111111;
   height: 600px;
   margin-top: 0;
@@ -758,6 +770,7 @@ nav .burger {
 }
 
 .rectangle {
+  overflow-x: hidden;
   position: relative;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;

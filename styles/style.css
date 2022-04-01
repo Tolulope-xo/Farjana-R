@@ -173,7 +173,6 @@ nav .burger {
 }
 
 .contain {
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +412,6 @@ nav .burger {
 }
 
 .services-1 {
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

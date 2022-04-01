@@ -17,7 +17,6 @@ body {
           box-sizing: border-box;
   background-color: black;
   color: white;
-  max-width: 1440px;
 }
 
 nav {
@@ -26,165 +25,114 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 7vw;
+  top: 0.1px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0;
+  text-decoration: none;
 }
 
-nav img {
-  width: 70%;
+nav .logo {
+  max-width: 20%;
 }
 
-nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media only screen and (max-width: 420px) {
+  nav .logo {
+    max-width: 50%;
+  }
 }
 
-nav ul .home {
+@media (min-width: 688px) and (max-width: 1025px) {
+  nav .logo {
+    max-width: 70%;
+  }
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 420px) {
+  nav .logo img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 688px) and (max-width: 1025px) {
+  nav .logo img {
+    width: 100%;
+  }
+}
+
+nav .nav-menu {
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 800px;
-  font-size: 15px;
-  font-weight: 600;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-menu li {
+  list-style: none;
   font-family: "Poppins", sans-serif;
-}
-
-nav ul .home :hover {
-  color: #e74b4b;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  letter-spacing: 2px;
+  margin: 0 10px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 420px) {
-  nav ul .home li {
-    opacity: 0;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  nav ul .home {
+  nav .nav-menu li {
     display: none;
-    height: 50vh;
-    position: absolute;
-    top: 8vh;
-    right: 0px;
-    background-color: #e74b4b;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
 }
 
 @media (min-width: 688px) and (max-width: 1025px) {
-  nav ul .home {
+  nav .nav-menu li {
     display: none;
-    height: 50vh;
-    position: absolute;
-    top: 8vh;
-    right: 0px;
-    background-color: #e74b4b;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
 }
 
-@media only screen and (max-width: 420px) {
-  nav ul .home .home-active {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@media (max-width: 688px) and (max-width: 1025px) {
-  nav ul .home .home-active {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-nav ul a {
+nav .nav-menu li a {
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: serif;
+  -webkit-transition: border all 0.2 ease;
+  transition: border all 0.2 ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-@media (min-width: 688px) and (max-width: 1025px) {
-  nav ul a {
-    padding-left: -10rem;
-  }
-}
-
-nav ul button {
+nav .nav-menu li a button {
   border: 1px solid #e74b4b;
-  border-radius: 20px;
   background-color: #e74b4b;
+  padding: 10px 0;
+  border-radius: 15px;
   color: white;
-  width: 140px;
-  height: 25px;
-  padding: auto;
+  width: 150px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 420px) {
-  nav ul button {
-    display: none;
-    width: 100px;
-  }
-}
-
-nav ul .burger {
+nav .burger {
   display: none;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 420px) {
-  nav ul .burger {
+  nav .burger {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
   }
 }
 
 @media (min-width: 688px) and (max-width: 1025px) {
-  nav ul .burger {
+  nav .burger {
     display: block;
   }
 }

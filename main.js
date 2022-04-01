@@ -1,11 +1,14 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.home');
+const menu = document.querySelector('.nav-menu')
+const  burger = document.querySelector('.burger')
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('.home-active');
-    });
+
+
+const toggleMenu = () => {
+    menu.classList.toggle("show");
 }
+
+
+burger.addEventListener('click', toggleMenu)
 
 
 

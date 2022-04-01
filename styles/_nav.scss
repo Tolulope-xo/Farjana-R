@@ -1,112 +1,79 @@
 nav {
   display: flex;
   justify-content: space-around;
+  padding: 0 7vw;
+  top: 0.1px;
   align-items: center;
-  margin: 20px 0;
-  img {
-    width: 70%;
+  text-decoration: none;
+  
+  .logo {
+    max-width: 20%;
+    @media only screen and (max-width: $mobile) {
+      max-width: 50%;
+    }
+
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      max-width: 70%;
+    }
+    img {
+      width: 100%;
+      @media only screen and (max-width: $mobile) {
+        width: 100%;
+      }
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        width: 100%;
+      }
+    }
   }
-
-  ul {
-    list-style: none;
+  .nav-menu {
+    text-transform: uppercase;
     display: flex;
-    .home {
-      display: flex;
-      justify-content: space-around;
-      width: 800px;
-      :hover {
-        color: #e74b4b;
-        transition: 0.5s ease-in;
-        letter-spacing: 2px;
-      }
+    justify-content: space-around;
+    text-decoration: none;
+    align-items: center;
 
-      li {
-        @media only screen and (max-width: $mobile) {
-          opacity: 0;
-        }
-      }
-
-      @media only screen and (max-width: $mobile) {
-        display: none;
-        height: 50vh;
-        position: absolute;
-        top: 8vh;
-        right: 0px;
-        background-color: #e74b4b;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-      }
-      @media (min-width: $ipad) and (max-width: $tablet) {
-        display: none;
-        height: 50vh;
-        position: absolute;
-        top: 8vh;
-        right: 0px;
-        background-color: #e74b4b;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-      }
-      font: {
-        size: 15px;
-        weight: 600;
-        family: $fontFamily;
-      }
-      .home-active {
-        @media only screen and (max-width: $mobile) {
-          transform: translateX(0);
-        }
-        @media (max-width: $ipad) and (max-width: $tablet) {
-          transform: translateX(0);
-        }
-      }
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-
-      @media (min-width: $ipad) and (max-width: $tablet) {
-        padding-left: -10rem;
-      }
-    }
-    button {
-      border: 1px solid #e74b4b;
-      border-radius: 20px;
-      background-color: #e74b4b;
-      color: white;
-      width: 140px;
-      height: 25px;
-      padding: auto;
-      text-transform: uppercase;
+    li {
+      list-style: none;
       font-family: $fontFamily;
-      @media only screen and (max-width: $mobile) {
-        display: none;
-        width: 100px;
-      }
-    }
-    .burger {
-      display: none;
-      cursor: pointer;
+      margin: 0 10px;
+      text-align: center;
 
       @media only screen and (max-width: $mobile) {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        display: none;
       }
 
       @media (min-width: $ipad) and (max-width: $tablet) {
-        display: block;
+        display: none;
       }
+      a {
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        font-family: serif;
+        transition: border all 0.2 ease;
+        font-family: $fontFamily;
+        font-weight: 600;
+        button {
+          border: 1px solid #e74b4b;
+          background-color: #e74b4b;
+          padding: 10px 0;
+          border-radius: 15px;
+          color: white;
+          width: 150px;
+          text-transform: uppercase;
+          font-family: $fontFamily;
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+
+    @media only screen and (max-width: $mobile) {
+      display: block;
+    }
+    @media (min-width: $ipad) and (max-width: $tablet) {
+      display: block;
     }
   }
 }

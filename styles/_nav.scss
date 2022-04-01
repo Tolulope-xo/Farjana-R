@@ -1,111 +1,112 @@
-.price {
-  margin: 0 110px;
-  height: 116px;
-
-  @media only screen and (max-width: $mobile) {
-    margin: 0 0px;
-    padding: 0;
-  }
-  @media (min-width: $ipad) and (max-width: $tablet) {
-  }
-
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
   img {
-    max-width: 180px;
-    @media only screen and (max-width: $mobile) {
-      margin-right: 60px;
-    }
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      padding-right: 20rem;
-    }
+    width: 70%;
   }
 
   ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
     .home {
       display: flex;
       justify-content: space-around;
+      width: 800px;
       :hover {
         color: #e74b4b;
         transition: 0.5s ease-in;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
       }
+
+      li {
+        @media only screen and (max-width: $mobile) {
+          opacity: 0;
+        }
+      }
+
       @media only screen and (max-width: $mobile) {
         display: none;
-        height: 100vh;
-        position: fixed;
-        left: -100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
+        height: 50vh;
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        background-color: #e74b4b;
+        display: flex;
         flex-direction: column;
-        border-color: #e74b4b;
-        width: 100%; 
-        justify-content: center;
         align-items: center;
-        transition: 0.3s;
-        :active {
-          left: 0;
-        }
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
       }
       @media (min-width: $ipad) and (max-width: $tablet) {
         display: none;
-      }
-      .nav-link {
-        margin: 0 15px;
-        @media only screen and (max-width: $mobile) {
-          margin: 16px 0;
-          
-        }
+        height: 50vh;
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        background-color: #e74b4b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
       }
       font: {
         size: 15px;
         weight: 600;
         family: $fontFamily;
       }
+      .home-active {
+        @media only screen and (max-width: $mobile) {
+          transform: translateX(0);
+        }
+        @media (max-width: $ipad) and (max-width: $tablet) {
+          transform: translateX(0);
+        }
+      }
     }
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
 
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      padding-left: -10rem;
+    a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        padding-left: -10rem;
+      }
     }
-  }
-  button {
-    border: 1px solid #e74b4b;
-    border-radius: 20px;
-    background-color: #e74b4b;
-    color: white;
-    width: 140px;
-    height: 35px;
-    @media only screen and (max-width: $mobile) {
+    button {
+      border: 1px solid #e74b4b;
+      border-radius: 20px;
+      background-color: #e74b4b;
+      color: white;
+      width: 140px;
+      height: 25px;
+      padding: auto;
+      text-transform: uppercase;
+      font-family: $fontFamily;
+      @media only screen and (max-width: $mobile) {
+        display: none;
+        width: 100px;
+      }
+    }
+    .burger {
       display: none;
-      width: 100px;
-      margin-right: 0px;
-    }
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      margin-left: -10rem;
-    }
-  }
-  .burger {
-    display: none;
-    cursor: pointer;
+      cursor: pointer;
 
-    @media only screen and (max-width: $mobile) {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;    }
+      @media only screen and (max-width: $mobile) {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
 
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      display: block;
+      @media (min-width: $ipad) and (max-width: $tablet) {
+        display: block;
+      }
     }
   }
 }

@@ -4,7 +4,6 @@
     margin: auto;
     align-items: center;
     width: 580px;
-
     text-align: center;
     display: flex;
     background: linear-gradient(
@@ -50,6 +49,7 @@
       width: 280px;
       font-size: 40px;
       margin-bottom: 20px;
+      display: block;
     }
     font: {
       size: 50px;

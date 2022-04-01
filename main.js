@@ -1,17 +1,32 @@
-const burger = document.querySelector(".burger");
-const home = document.querySelector(".home");
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.home');
 
-burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    home.classList.toggle("active");
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('.home-active');
+    });
+}
 
-})
 
-document.querySelectorAll(".nav-link").forEach(n => n.
-addEventListener("click", () => {
-    burger.classList.remove("active");
-    burger.classList.remove("active");
-}))
+
+
+
+
+// const burger = document.querySelector(".burger");
+// const home = document.querySelector(".home");
+
+// burger.addEventListener("click", () => {
+//     burger.classList.toggle("active");
+//     home.classList.toggle("active");
+
+// })
+
+// document.querySelectorAll(".nav-link").forEach(n => n.
+// addEventListener("click", () => {
+//     burger.classList.remove("active");
+//     burger.classList.remove("active");
+// }))
+
 
 // const menu = document.querySelector('.price')
 // const  burger = document.querySelector('.burger')

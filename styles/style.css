@@ -768,7 +768,6 @@ nav .burger {
 }
 
 .rectangle {
-  overflow-x: hidden;
   position: relative;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;

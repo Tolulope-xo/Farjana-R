@@ -1,7 +1,7 @@
 .rectangle {
   position: relative;
   max-width: fit-content;
-  margin: auto;
+  margin: 80px auto auto auto;
   top: 70px;
   left: 20px;
   font-family: $fontFamily1;
@@ -10,7 +10,6 @@
   display: flex;
   @media only screen and (max-width: $mobile) {
     display: block;
-    left: 0;
   }
   @media (min-width: $ipad) and (max-width: $tablet) {
     display: block;
@@ -29,27 +28,32 @@
     }
   }
   .rectangle2 {
-    // float: right;
+    display: flex;
     text-align: left;
     align-items: left;
     font-size: 18px;
     @media only screen and (max-width: $mobile) {
+      display: block;
       font-size: 14px;
+      align-items: center;
+      text-align: center;
     }
-    th {
-      text-transform: uppercase;
+
+    @media only screen and (max-width: $tablet) {
+      display: block;
+      font-size: 14px;
+      align-items: center;
+      text-align: center;
     }
-    td {
-      padding-right: 80px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-size: 12px;
-      @media only screen and (max-width: $mobile) {
-        font-size: 14px;
-        padding-right: 40px;
-      }
-      @media (min-width: $ipad) and (max-width: $tablet) {
-        font-size: 14px;
+
+    .side,
+    .side1,
+    .side2 {
+      margin-right: 40px;
+      h4 {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: $fontFamily1;
       }
     }
   }

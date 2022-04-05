@@ -139,10 +139,6 @@ nav .burger {
   }
 }
 
-.hero {
-  overflow-x: hidden;
-}
-
 .hero h1 {
   text-transform: uppercase;
   margin: auto;
@@ -658,25 +654,14 @@ nav .burger {
 }
 
 .client {
-  overflow-x: hidden;
   background-color: #111111;
-  height: 600px;
+  height: 100%;
   margin-top: 0;
-}
-
-@media only screen and (max-width: 420px) {
-  .client {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 
 @media (min-width: 688px) and (max-width: 1025px) {
   .client {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 700px;
   }
 }
 
@@ -705,7 +690,7 @@ nav .burger {
   font-size: 60px;
 }
 
-.img {
+.client .img {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -714,55 +699,45 @@ nav .burger {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 20px;
 }
 
 @media only screen and (max-width: 420px) {
-  .img {
+  .client .img {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .client .img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .client .img {
     margin: 0;
   }
 }
 
-.img .frame1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  margin-left: 20px;
+.client .frame1 {
+  position: relative;
+  left: 42%;
+  margin-top: 10px;
 }
 
-@media only screen and (max-width: 420px) {
-  .img .frame1 {
-    display: inline;
-  }
-}
-
-@media (min-width: 688px) and (max-width: 1025px) {
-  .img .frame1 {
-    display: inline;
-    margin-left: 0;
-  }
-}
-
-.img .frame2 {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  margin-left: 150px;
-}
-
-@media only screen and (max-width: 420px) {
-  .img .frame2 {
-    display: inline;
-    margin: 0;
-  }
-}
-
-@media (min-width: 688px) and (max-width: 1025px) {
-  .img .frame2 {
-    display: block;
-    margin: 0;
+@media only screen and (max-width: 1025px) {
+  .client .frame1 {
+    left: 30%;
+    margin-top: 20px;
   }
 }
 
@@ -771,7 +746,7 @@ nav .burger {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: auto;
+  margin: 80px auto auto auto;
   top: 70px;
   left: 20px;
   font-family: Poppins1;
@@ -785,7 +760,6 @@ nav .burger {
 @media only screen and (max-width: 420px) {
   .rectangle {
     display: block;
-    left: 0;
   }
 }
 
@@ -811,6 +785,9 @@ nav .burger {
 }
 
 .rectangle .rectangle2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
   -webkit-box-align: left;
       -ms-flex-align: left;
@@ -820,31 +797,37 @@ nav .burger {
 
 @media only screen and (max-width: 420px) {
   .rectangle .rectangle2 {
+    display: block;
     font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
 
-.rectangle .rectangle2 th {
+@media only screen and (max-width: 1025px) {
+  .rectangle .rectangle2 {
+    display: block;
+    font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.rectangle .rectangle2 .side,
+.rectangle .rectangle2 .side1,
+.rectangle .rectangle2 .side2 {
+  margin-right: 40px;
+}
+
+.rectangle .rectangle2 .side h4,
+.rectangle .rectangle2 .side1 h4,
+.rectangle .rectangle2 .side2 h4 {
   text-transform: uppercase;
-}
-
-.rectangle .rectangle2 td {
-  padding-right: 80px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 12px;
-}
-
-@media only screen and (max-width: 420px) {
-  .rectangle .rectangle2 td {
-    font-size: 14px;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width: 688px) and (max-width: 1025px) {
-  .rectangle .rectangle2 td {
-    font-size: 14px;
-  }
+  font-size: 18px;
+  font-family: Poppins1;
 }
 /*# sourceMappingURL=style.css.map */

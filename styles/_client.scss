@@ -1,14 +1,12 @@
 .client {
-  overflow-x: hidden;
-
   background-color: #111111;
-  height: 600px;
+  height: 100%;
   margin-top: 0;
-  @media only screen and (max-width: $mobile) {
-    height: fit-content;
-  }
+  // @media only screen and (max-width: $mobile) {
+  //   height: 100%;
+  // }
   @media (min-width: $ipad) and (max-width: $tablet) {
-    height: fit-content;
+    height: 700px;
   }
   .clients {
     align-items: center;
@@ -34,40 +32,38 @@
     margin-top: 0;
     font-size: 60px;
   }
-}
-.img {
-  position: relative;
-  width: fit-content;
-  align-items: center;
-  margin: auto;
-  @media only screen and (max-width: $mobile) {
-    margin: 0;
-  }
 
-  .frame1 {
-    display: flex;
-    gap: 40px;
-    margin-left: 20px;
+  .img {
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
     @media only screen and (max-width: $mobile) {
-      display: inline;
+      grid-template-columns: auto auto;
     }
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      display: inline;
-      margin-left: 0;
+    @media only screen and (max-width: $ipad) {
+      width: fit-content;
+      gap: 0;
+    }
+    @media only screen and (max-width: $tablet) {
+    }
+
+    @media only screen and (max-width: $mobile) {
+      margin: 0;
     }
   }
-  .frame2 {
-    margin-top: 60px;
-    display: flex;
-    gap: 40px;
-    margin-left: 150px;
-    @media only screen and (max-width: $mobile) {
-      display: inline;
-      margin: 0;
+  .frame1 {
+    position: relative;
+    left: 42%;
+    margin-top: 10px;
+    @media only screen and (max-width: $tablet) {
+      left: 30%;
+      margin-top: 20px;
     }
-    @media (min-width: $ipad) and (max-width: $tablet) {
-      display: block;
-      margin: 0;
-    }
+
   }
 }
